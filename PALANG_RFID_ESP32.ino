@@ -22,14 +22,19 @@ struct Kartu {
 
 const Kartu daftarKartu[] = {
 
-  // Kartu 1
+  // Kartu 1 dengan UID 93:A4:7B:21
   { {0x93, 0xA4, 0x7B, 0x21}, 4 },
+
+  //Kartu 2 dengan UID 12:23:56:78
+//  { {0x12, 0x23, 0x56, 0x781}, 4 },
+
+  
+//  { {0x93, 0xA4, 0x7B, 0x21}, 4 },
 };
 const byte JUMLAH_KARTU =
   sizeof(daftarKartu) / sizeof(daftarKartu[0]);
 
 bool kartuValid() {
-
   // Periksa semua kartu yang terdaftar
   for (byte kartu = 0; kartu < JUMLAH_KARTU; kartu++) {
 
